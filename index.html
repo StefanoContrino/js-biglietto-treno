@@ -4,14 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto del treno</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/js/bootstrap.bundle.js">
     
     
 </head>
 <body>
 
-    <p id="result"></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 pt-2">
+                <img class="logo" src="./img/download.png" alt="">
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center pt-5">
+                <div class="card text-center mb-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <p id="result"></p>
+                        <a href="#" class="btn btn-primary">Travel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a9a97b4f55.js" crossorigin="anonymous"></script>
+    
     
 </body>
 </html>

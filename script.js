@@ -6,15 +6,26 @@ potete stampare il risultato tramite un alert o in console
 
 Bonus: scrivete il risultato in un elemento in pagina (es. un tag <div>) */
 
-let pricePerKm = 0.21;
-let km = 100;
-let age = 22;
-let price = km * pricePerKm;
+// Input:
+
+const km = parseInt(prompt("Insert the distance to cover:"));
+const age = parseInt(prompt("Insert you age:"));
+
+// Fixed variables:
+
+const pricePerKm = 0.21;
+const price = km * pricePerKm;
+
+// Discount calculation:
 
 let minor = (price * 20) / 100;
 let over = (price * 40) / 100;
 
+// Message Output:
+
 let message = "";
+
+// Condition:
 
 if (age < 18) {
     message = `Your price it's: ${(price - minor).toFixed(2)}€`;
